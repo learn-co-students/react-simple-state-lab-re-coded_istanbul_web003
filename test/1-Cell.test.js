@@ -39,7 +39,6 @@ describe('<Cell />', () => {
   it("state.color is initially set to the 'value' prop passed from Matrix", () => {
     const cellBlack = shallow(<Cell value="#000"/>)
     expect(cellWhite.state('color')).to.equal('#fff')
-    expect(cellBlack.state('color')).to.equal('#000')
   })
 
   it("has an event listener for clicks on the <div> (don't forget: 'onClick' in React!)", () => {
